@@ -1,0 +1,89 @@
+/* estilos da página index.html */
+
+body{
+   background-color: rgb(251, 252, 229);
+}
+
+h1{
+   color: aliceblue; 
+    background-color: rgb(77, 142, 168);
+}
+
+image{
+    color: aliceblue;
+}
+#titulo { /* # é para id e . é para classe */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+    
+}
+.center {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    
+}
+
+.justify {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+ 
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+.final {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+}
+
+#menu li{
+    display: inline;
+    padding: 30px;
+    text-decoration: none;
+    
+}
+
+#menu li a{
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#menu li a:hover {
+    color: gray;
+   
+}
+
+/* estilos da página pgInicial.html */
+
+#titulo2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.justify {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+ 
+}
+
+.container2 {
+    display: flex;
+    flex-flow: row; /* Alinha os elementos em uma linha horizontal */
+
+    /* Estilo para a classe .right ) */
+    .right {
+        float: right;
+        margin-right: 10px;
+        margin-bottom: 5px;
+    }
+}
+
+.final {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: right;
+}
