@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="shortcut icon"
-      href="/assets/VOGUE_icon.png"
+      href="./assets/imagens/VOGUE_icon.png"
       type="image/x-icon"
     />
     <title>Página inicial</title>
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-    <img src="/assets/VOGUE_LOGO.png" alt="símbolo Vogue" />
+    <img src="/assets/imagens/VOGUE_LOGO.png" alt="símbolo Vogue" />
     <ul id="menu">
       <li class=><a href="/pgInicial.html">Página inicial</a></li>
       <li class=><a href="/index.html">Notícias da semana</a></li>
@@ -25,7 +25,7 @@
     </h2>
   </div>
   <div>
-    <img src="/assets/apex.jpeg" alt="Apex representação da bandeira com logo">
+    <img src="./assets/imagens/apex.jpeg" alt="Apex representação da bandeira com logo">
 </div>
 </div>
 <div>
@@ -35,10 +35,14 @@
     <div>
     <form class="justify">
       <label for="nome">Nome:</label><br>
-      <input type="text" id="nome"> 
+      <input type="text" id="nome" onkeyup="validaNome()"> 
+      <div id="txtNome"> 
+      </div>
       <br>
       <label for="email">Email:</label><br>
-      <input type="text" id="email">
+      <input type="text" id="email" onkeyup="validaEmail()">
+      <div id="txtEmail"> 
+      </div>
       <br>
       <label for="mensagem">Mensagem:</label><br>
       <textarea name="mensagem" id="mensagem" cols="175" rows="10">Escreva sua mensagem aqui</textarea>
@@ -50,10 +54,10 @@
 </div>
 <div>
     <h3 class="justify">Nosso escritório:</h3>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116976.80163562944!2d-46.82973095664061!3d-23.62136059999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50be74a62537%3A0xc2b947905324cd64!2sEditora%20Vogue!5e0!3m2!1spt-BR!2sbr!4v1722024231829!5m2!1spt-BR!2sbr" width="1300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d116976.80163562944!2d-46.82973095664061!3d-23.62136059999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50be74a62537%3A0xc2b947905324cd64!2sEditora%20Vogue!5e0!3m2!1spt-BR!2sbr!4v1722024231829!5m2!1spt-BR!2sbr" width="1300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaComum()"   id="mapa"></iframe>
 </div>
 
-
+<script src="./assets/js/script.js"></script>
   </body>
 </br>
   <footer class="final">Todos os direitos reservados Vogue Brasil</footer>
